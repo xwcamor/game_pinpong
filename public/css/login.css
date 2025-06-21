@@ -1,0 +1,116 @@
+/* Estilos generales */
+body {
+  background-image: url("/pingpong_game/public/images/fondo_lobby.png"); /* Usa la imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Arcade Classic", sans-serif; /* Fuente arcade */
+  color: white;
+}
+
+/* Contenedor del login con efecto neón */
+.login-container {
+  background: rgba(20, 20, 50, 0.9);
+  padding: 35px;
+  border-radius: 10px;
+  border: 6px solid #0084ff;
+  box-shadow: 0 0 25px rgba(0, 132, 255, 1);
+  text-align: center;
+  width: 400px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: neon-glow 1.5s infinite alternate;
+}
+
+/* Animación de resplandor neón */
+@keyframes neon-glow {
+  from {
+    box-shadow: 0 0 15px rgba(0, 132, 255, 0.8);
+  }
+  to {
+    box-shadow: 0 0 30px rgba(0, 132, 255, 1);
+  }
+}
+
+/* Título ajustado dentro del recuadro */
+.login-title {
+  font-size: 42px; /* Tamaño grande pero integrado */
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #00a8ff;
+  text-shadow: 0px 0px 15px #00a8ff, 0px 0px 30px #0084ff, 0px 0px 45px #0066cc; /* Efecto neón multicapa */
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+/* Campos de entrada */
+.input-group {
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.login-input {
+  width: 85%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 3px solid #0084ff;
+  background: black;
+  color: white;
+  font-size: 18px;
+  outline: none;
+  text-align: center;
+  transition: 0.3s;
+  font-family: "Arcade Classic", sans-serif;
+}
+
+.login-input:focus {
+  border-color: #00a8ff;
+  box-shadow: 0 0 12px rgba(0, 132, 255, 0.8);
+}
+
+/* Botón arcade */
+.btn-login {
+  width: 85%;
+  padding: 14px;
+  background: #0084ff;
+  color: black;
+  font-size: 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  border: 3px solid #00a8ff;
+  transition: transform 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
+  font-family: "Arcade Classic", sans-serif;
+}
+
+.btn-login:hover {
+  background: #00a8ff;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px #00a8ff, 0px 0px 40px #0084ff;
+}
+
+/* Enlace de registro */
+.footer-links a {
+  color: #00a8ff;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  margin-top: 12px;
+  transition: 0.3s;
+  font-family: "Arcade Classic", sans-serif;
+}
+
+.footer-links a:hover {
+  color: white;
+  text-shadow: 0 0 6px #fff;
+}

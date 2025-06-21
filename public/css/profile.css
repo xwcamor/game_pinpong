@@ -1,0 +1,120 @@
+/* Estilos generales */
+body {
+  background-image: url("/pingpong_game/public/images/Copilot.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Press Start 2P", cursive;
+  color: white;
+}
+
+/* Contenedor del perfil */
+.profile-container {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 25px;
+  border-radius: 15px;
+  border: 5px solid #ffd700;
+  box-shadow: 0px 0px 20px #ffd700, 0px 0px 40px #ff4500;
+  text-align: center;
+  width: 60%;
+  animation: fade-in 1s ease-in-out;
+}
+
+/* Avatar centrado */
+.avatar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 5px solid #ffd700;
+  box-shadow: 0px 0px 20px #ffd700;
+  transition: transform 0.3s ease-in-out;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+}
+
+/* Botones estilizados */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.btn-upload,
+.btn-save {
+  padding: 12px 24px;
+  background: linear-gradient(90deg, #ff7700, #ffd700);
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  border: 4px solid #ffdd00;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.btn-upload:hover,
+.btn-save:hover {
+  background: linear-gradient(90deg, #ffd700, #ff4500);
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px #ffd700, 0px 0px 30px #ff4500;
+}
+
+/* Estilo de las estadísticas */
+.stats-container {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  border: 4px solid #ffd700;
+  box-shadow: 0px 0px 15px #ffd700;
+}
+
+.stats-container h2 {
+  font-size: 30px;
+  color: #ffd700;
+  text-shadow: 0px 0px 15px #ffa500, 0px 0px 30px #ff4500;
+}
+
+.stats-container p {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #00ffcc;
+}
+
+/* Botón de volver al lobby */
+.btn-lobby {
+  margin-top: 20px;
+  padding: 14px 28px;
+  background: linear-gradient(90deg, #ff7700, #ffd700);
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+  border: 4px solid #ffdd00;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.btn-lobby:hover {
+  background: linear-gradient(90deg, #ffd700, #ff4500);
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px #ffd700, 0px 0px 40px #ff4500;
+}
